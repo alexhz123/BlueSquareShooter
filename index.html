@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Square Game</title>
+    <style>
+        body { margin: 0; padding: 0; overflow: hidden; }
+        #gameArea {
+            position: relative;
+            width: 800px;  /* Fixed size for game area */
+            height: 600px; /* Fixed size for game area */
+            margin: 0 auto; /* Center the game area */
+            background-color: lightblue;
+            border: 2px solid black; /* Game area border */
+        }
+        #player {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+        }
+        .bullet {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: yellow;
+        }
+        .enemy {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+        }
+        #waveCounter, #enemiesLeftCounter {
+            position: absolute;
+            top: 10px;
+            font-size: 20px;
+            color: white;
+        }
+        #waveCounter {
+            left: 10px;
+        }
+        #enemiesLeftCounter {
+            left: 10px;
+            top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameArea">
+        <div id="player"></div>
+        <div id="waveCounter">Wave: 1</div>
+        <div id="enemiesLeftCounter">Enemies Left: 0</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

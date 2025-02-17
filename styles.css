@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+}
+
+#gameArea {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+#player {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.enemy {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+.bullet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+}
+
+#waveCounter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: black;
+}
